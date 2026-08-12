@@ -1,0 +1,116 @@
+********************************************************************************
+*                         3_explicit.mlxtran                                   *
+*                         August 12, 2026 at 22:25:27                          *
+*                         Monolix version : 2024R1                             *
+********************************************************************************
+
+
+ESTIMATION OF THE POPULATION PARAMETERS ________________________________________
+
+Fixed Effects ----------------------------
+beta_exp_pop          :              -3.82
+delta0_pop            :              0.991
+p_pop                 :               2.94
+td_pop                :               1.93
+b_exp_pop             :              -2.32
+h_0_pop               :              0.608
+tc_pop                :               6.25
+sigma_pop             :              0.406
+phi_exp_pop           :              -1.45
+rho_exp_pop           :               -1.8
+dF_pop                :              0.944
+q_exp_pop             :              -4.28
+ifn0_pop              :                0.4
+
+Standard Deviation of the Random Effects -
+omega_beta_exp        :              0.614
+omega_delta0          :                1.3
+omega_p               :              0.532
+omega_td              :              0.437
+omega_b_exp           :               1.36
+omega_h_0             :              0.245
+omega_tc              :               1.38
+omega_sigma           :              0.657
+omega_rho_exp         :              0.667
+omega_q_exp           :             0.0306
+omega_ifn0            :              0.496
+
+Correlations -----------------------------
+corr_beta_exp_b_exp   :               -0.8
+corr_delta0_b_exp     :             -0.578
+corr_h_0_b_exp        :             -0.935
+corr_ifn0_b_exp       :              0.324
+corr_p_b_exp          :              0.342
+corr_q_exp_b_exp      :             -0.607
+corr_rho_exp_b_exp    :              -0.77
+corr_sigma_b_exp      :            -0.0705
+corr_tc_b_exp         :             -0.811
+corr_td_b_exp         :              0.552
+corr_delta0_beta_exp  :              0.615
+corr_h_0_beta_exp     :              0.702
+corr_ifn0_beta_exp    :             -0.601
+corr_p_beta_exp       :             -0.379
+corr_q_exp_beta_exp   :              0.688
+corr_rho_exp_beta_exp :               0.69
+corr_sigma_beta_exp   :            -0.0883
+corr_tc_beta_exp      :              0.606
+corr_td_beta_exp      :             -0.662
+corr_h_0_delta0       :              0.623
+corr_ifn0_delta0      :             -0.809
+corr_p_delta0         :            -0.0954
+corr_q_exp_delta0     :              0.886
+corr_rho_exp_delta0   :              0.888
+corr_sigma_delta0     :                0.4
+corr_tc_delta0        :              0.795
+corr_td_delta0        :             -0.292
+corr_ifn0_h_0         :             -0.329
+corr_p_h_0            :             -0.502
+corr_q_exp_h_0        :              0.594
+corr_rho_exp_h_0      :              0.763
+corr_sigma_h_0        :            -0.0227
+corr_tc_h_0           :              0.767
+corr_td_h_0           :             -0.308
+corr_p_ifn0           :             0.0883
+corr_q_exp_ifn0       :             -0.796
+corr_rho_exp_ifn0     :              -0.68
+corr_sigma_ifn0       :             -0.249
+corr_tc_ifn0          :             -0.497
+corr_td_ifn0          :              0.319
+corr_q_exp_p          :              -0.11
+corr_rho_exp_p        :            -0.0678
+corr_sigma_p          :              0.755
+corr_tc_p             :            -0.0122
+corr_td_p             :             -0.241
+corr_rho_exp_q_exp    :              0.851
+corr_sigma_q_exp      :              0.351
+corr_tc_q_exp         :              0.775
+corr_td_q_exp         :             -0.449
+corr_sigma_rho_exp    :              0.452
+corr_tc_rho_exp       :              0.889
+corr_td_rho_exp       :             -0.492
+corr_tc_sigma         :              0.521
+corr_td_sigma         :             -0.293
+corr_td_tc            :             -0.483
+
+Error Model Parameters -------------------
+a1                    :              0.861
+b2                    :              0.403
+a3                    :              0.559
+
+Elapsed time (seconds):  1.1e+03
+CPU time     (seconds):  6.4e+03
+Exploratory phase iterations:     1500 (Fixed number of iterations)
+Smoothing phase iterations:        500 (Fixed number of iterations)
+
+ _______________________________________________________________________________
+
+
+
+
+DATASET INFORMATION
+Number of individuals: 12
+Number of observations (obsid 1): 391
+Number of observations (obsid 2): 391
+Number of observations (obsid 3): 192
+Number of doses: 0
+

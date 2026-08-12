@@ -1,0 +1,139 @@
+<DATAFILE>
+
+[FILEINFO]
+file={path='../../../../iyaniwura/chim_filtered_3stream.csv'}
+delimiter = comma
+header={ID, TIME, DV, CENS, MDV, LIMIT, YTYPE}
+
+[CONTENT]
+ID = {use=identifier}
+TIME = {use=time}
+DV = {use=observation, yname={'1', '2', '3'}, type={continuous, continuous, continuous}}
+CENS = {use=censored}
+MDV = {use=missingdependentvariable}
+LIMIT = {use=limit}
+YTYPE = {use=observationtype}
+
+<MODEL>
+
+[INDIVIDUAL]
+input = {b_exp_pop, omega_b_exp, beta_exp_pop, omega_beta_exp, delta0_pop, omega_delta0, h_0_pop, omega_h_0, p_pop, omega_p, phi_exp_pop, rho_exp_pop, omega_rho_exp, sigma_pop, omega_sigma, tc_pop, omega_tc, td_pop, omega_td, corr_delta0_beta_exp, corr_p_beta_exp, corr_td_beta_exp, corr_beta_exp_b_exp, corr_h_0_beta_exp, corr_tc_beta_exp, corr_rho_exp_beta_exp, corr_p_delta0, corr_td_delta0, corr_delta0_b_exp, corr_h_0_delta0, corr_tc_delta0, corr_rho_exp_delta0, corr_td_p, corr_p_b_exp, corr_p_h_0, corr_tc_p, corr_rho_exp_p, corr_td_b_exp, corr_td_h_0, corr_td_tc, corr_td_rho_exp, corr_h_0_b_exp, corr_tc_b_exp, corr_rho_exp_b_exp, corr_tc_h_0, corr_rho_exp_h_0, corr_tc_rho_exp, corr_sigma_beta_exp, corr_sigma_delta0, corr_sigma_p, corr_td_sigma, corr_sigma_b_exp, corr_sigma_h_0, corr_tc_sigma, corr_sigma_rho_exp, alpha_exp_pop, omega_alpha_exp}
+
+DEFINITION:
+b_exp = {distribution=normal, typical=b_exp_pop, sd=omega_b_exp}
+beta_exp = {distribution=normal, typical=beta_exp_pop, sd=omega_beta_exp}
+delta0 = {distribution=logNormal, typical=delta0_pop, sd=omega_delta0}
+h_0 = {distribution=logNormal, typical=h_0_pop, sd=omega_h_0}
+p = {distribution=normal, typical=p_pop, sd=omega_p}
+phi_exp = {distribution=normal, typical=phi_exp_pop, no-variability}
+rho_exp = {distribution=normal, typical=rho_exp_pop, sd=omega_rho_exp}
+sigma = {distribution=logNormal, typical=sigma_pop, sd=omega_sigma}
+tc = {distribution=logitNormal, max=12, typical=tc_pop, sd=omega_tc}
+td = {distribution=logNormal, typical=td_pop, sd=omega_td}
+alpha_exp = {distribution=normal, typical=alpha_exp_pop, sd=omega_alpha_exp}
+correlation = {level=id, r(beta_exp, b_exp)=corr_beta_exp_b_exp, r(delta0, b_exp)=corr_delta0_b_exp, r(h_0, b_exp)=corr_h_0_b_exp, r(p, b_exp)=corr_p_b_exp, r(rho_exp, b_exp)=corr_rho_exp_b_exp, r(sigma, b_exp)=corr_sigma_b_exp, r(tc, b_exp)=corr_tc_b_exp, r(td, b_exp)=corr_td_b_exp, r(delta0, beta_exp)=corr_delta0_beta_exp, r(h_0, beta_exp)=corr_h_0_beta_exp, r(p, beta_exp)=corr_p_beta_exp, r(rho_exp, beta_exp)=corr_rho_exp_beta_exp, r(sigma, beta_exp)=corr_sigma_beta_exp, r(tc, beta_exp)=corr_tc_beta_exp, r(td, beta_exp)=corr_td_beta_exp, r(h_0, delta0)=corr_h_0_delta0, r(p, delta0)=corr_p_delta0, r(rho_exp, delta0)=corr_rho_exp_delta0, r(sigma, delta0)=corr_sigma_delta0, r(tc, delta0)=corr_tc_delta0, r(td, delta0)=corr_td_delta0, r(p, h_0)=corr_p_h_0, r(rho_exp, h_0)=corr_rho_exp_h_0, r(sigma, h_0)=corr_sigma_h_0, r(tc, h_0)=corr_tc_h_0, r(td, h_0)=corr_td_h_0, r(rho_exp, p)=corr_rho_exp_p, r(sigma, p)=corr_sigma_p, r(tc, p)=corr_tc_p, r(td, p)=corr_td_p, r(sigma, rho_exp)=corr_sigma_rho_exp, r(tc, rho_exp)=corr_tc_rho_exp, r(td, rho_exp)=corr_td_rho_exp, r(tc, sigma)=corr_tc_sigma, r(td, sigma)=corr_td_sigma, r(td, tc)=corr_td_tc}
+
+[LONGITUDINAL]
+input = {a1, b2, a3, b3}
+
+file = '../../../2_prop_structural.txt'
+
+DEFINITION:
+y1 = {distribution=normal, prediction=ValueVt, errorModel=constant(a1)}
+y2 = {distribution=normal, prediction=ValueVi, errorModel=proportional(b2)}
+y3 = {distribution=normal, prediction=ValueF, errorModel=combined1(a3, b3)}
+
+<FIT>
+data = {'1', '2', '3'}
+model = {y1, y2, y3}
+
+<PARAMETER>
+a1 = {value=0.8625688, method=MLE}
+a3 = {value=1, method=MLE}
+alpha_exp_pop = {value=1, method=MLE}
+b2 = {value=0.3928739, method=MLE}
+b3 = {value=0.3, method=MLE}
+b_exp_pop = {value=-2.4957199, method=MLE}
+beta_exp_pop = {value=-3.6812415, method=MLE}
+c2 = {value=1, method=FIXED}
+c3 = {value=1, method=FIXED}
+corr_beta_exp_b_exp = {value=-0.7553079, method=MLE}
+corr_delta0_b_exp = {value=-0.5332043, method=MLE}
+corr_delta0_beta_exp = {value=0.6177786, method=MLE}
+corr_h_0_b_exp = {value=-0.9413694, method=MLE}
+corr_h_0_beta_exp = {value=0.6372111, method=MLE}
+corr_h_0_delta0 = {value=0.5412044, method=MLE}
+corr_p_b_exp = {value=0.2375612, method=MLE}
+corr_p_beta_exp = {value=-0.3907369, method=MLE}
+corr_p_delta0 = {value=-0.03141833, method=MLE}
+corr_p_h_0 = {value=-0.3300869, method=MLE}
+corr_rho_exp_b_exp = {value=-0.7770605, method=MLE}
+corr_rho_exp_beta_exp = {value=0.571483, method=MLE}
+corr_rho_exp_delta0 = {value=0.7673579, method=MLE}
+corr_rho_exp_h_0 = {value=0.7433476, method=MLE}
+corr_rho_exp_p = {value=0.1780991, method=MLE}
+corr_sigma_b_exp = {value=-0.1201142, method=MLE}
+corr_sigma_beta_exp = {value=-0.09247049, method=MLE}
+corr_sigma_delta0 = {value=0.4518259, method=MLE}
+corr_sigma_h_0 = {value=0.069124, method=MLE}
+corr_sigma_p = {value=0.7561128, method=MLE}
+corr_sigma_rho_exp = {value=0.5955815, method=MLE}
+corr_tc_b_exp = {value=-0.8011409, method=MLE}
+corr_tc_beta_exp = {value=0.6097383, method=MLE}
+corr_tc_delta0 = {value=0.7877161, method=MLE}
+corr_tc_h_0 = {value=0.7550575, method=MLE}
+corr_tc_p = {value=0.01759215, method=MLE}
+corr_tc_rho_exp = {value=0.8812391000000001, method=MLE}
+corr_tc_sigma = {value=0.5414531, method=MLE}
+corr_td_b_exp = {value=0.5406644, method=MLE}
+corr_td_beta_exp = {value=-0.6024856, method=MLE}
+corr_td_delta0 = {value=-0.1528084, method=MLE}
+corr_td_h_0 = {value=-0.3225825, method=MLE}
+corr_td_p = {value=-0.1877857, method=MLE}
+corr_td_rho_exp = {value=-0.4709388, method=MLE}
+corr_td_sigma = {value=-0.1528719, method=MLE}
+corr_td_tc = {value=-0.3650431, method=MLE}
+delta0_pop = {value=1.2126559, method=MLE}
+h_0_pop = {value=0.6448496, method=MLE}
+omega_alpha_exp = {value=1, method=MLE}
+omega_b_exp = {value=1.2355779, method=MLE}
+omega_beta_exp = {value=0.6337593, method=MLE}
+omega_delta0 = {value=1.0727434, method=MLE}
+omega_h_0 = {value=0.1985932, method=MLE}
+omega_p = {value=0.4934776, method=MLE}
+omega_rho_exp = {value=0.5169929, method=MLE}
+omega_sigma = {value=0.6674052, method=MLE}
+omega_tc = {value=1.3188147, method=MLE}
+omega_td = {value=0.4510911, method=MLE}
+p_pop = {value=2.7195583, method=MLE}
+phi_exp_pop = {value=-1.5391575, method=MLE}
+rho_exp_pop = {value=-1.5240011, method=MLE}
+sigma_pop = {value=0.4281325, method=MLE}
+tc_pop = {value=6.9264077, method=MLE}
+td_pop = {value=1.8329139, method=MLE}
+
+<MONOLIX>
+
+[TASKS]
+populationParameters()
+individualParameters(method = {conditionalMean, conditionalMode })
+fim(method = StochasticApproximation)
+logLikelihood(method = ImportanceSampling)
+
+[PLOTS]
+run = true
+plots = {indfits = {selected = true}, parameterdistribution = {selected = true}, obspred = {selected = true}, covariancemodeldiagnosis = {selected = true}, covariatemodeldiagnosis = {selected = true}, vpc = {selected = true}, npc = {selected = true}, residualsscatter = {selected = true}, residualsdistribution = {selected = true}, randomeffects = {selected = true}, blq = {selected = true}, predictiondistribution = {selected = true}, likelihoodcontribution = {selected = true}, saemresults = {selected = true}, condmeanresults = {selected = true}, fisher = {selected = true}, likelihoodresults = {selected = true}}
+
+[SETTINGS]
+GLOBAL:
+seed = 12345
+exportpath = '../../'
+
+POPULATION:
+exploratoryautostop = no
+smoothingautostop = no
+burniniterations = 10
+smoothingiterations = 500
+exploratoryiterations = 1500
+simulatedannealingiterations = 1500
+

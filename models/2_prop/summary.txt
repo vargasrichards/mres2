@@ -1,0 +1,93 @@
+********************************************************************************
+*                         2_prop.mlxtran                                       *
+*                         August 12, 2026 at 22:52:21                          *
+*                         Monolix version : 2024R1                             *
+********************************************************************************
+
+
+ESTIMATION OF THE POPULATION PARAMETERS ________________________________________
+
+Fixed Effects ----------------------------
+beta_exp_pop          :               -3.6
+delta0_pop            :               1.03
+p_pop                 :               2.88
+td_pop                :               1.93
+b_exp_pop             :               -2.4
+h_0_pop               :              0.604
+tc_pop                :               6.31
+sigma_pop             :              0.427
+phi_exp_pop           :             -0.205
+rho_exp_pop           :              -2.18
+alpha_exp_pop         :              -5.71
+
+Standard Deviation of the Random Effects -
+omega_beta_exp        :              0.343
+omega_delta0          :               1.18
+omega_p               :              0.274
+omega_td              :              0.425
+omega_b_exp           :               1.49
+omega_h_0             :              0.287
+omega_tc              :               1.52
+omega_sigma           :              0.536
+omega_rho_exp         :              0.837
+omega_alpha_exp       :              0.568
+
+Correlations -----------------------------
+corr_beta_exp_b_exp   :             -0.821
+corr_delta0_b_exp     :             -0.927
+corr_h_0_b_exp        :             -0.954
+corr_p_b_exp          :            -0.0846
+corr_rho_exp_b_exp    :             -0.871
+corr_sigma_b_exp      :             -0.155
+corr_tc_b_exp         :             -0.776
+corr_td_b_exp         :              0.534
+corr_delta0_beta_exp  :              0.845
+corr_h_0_beta_exp     :              0.746
+corr_p_beta_exp       :              0.362
+corr_rho_exp_beta_exp :               0.64
+corr_sigma_beta_exp   :              0.223
+corr_tc_beta_exp      :               0.79
+corr_td_beta_exp      :             -0.746
+corr_h_0_delta0       :              0.923
+corr_p_delta0         :              0.152
+corr_rho_exp_delta0   :              0.833
+corr_sigma_delta0     :              0.228
+corr_tc_delta0        :              0.817
+corr_td_delta0        :             -0.584
+corr_p_h_0            :            -0.0598
+corr_rho_exp_h_0      :              0.898
+corr_sigma_h_0        :              0.171
+corr_tc_h_0           :               0.73
+corr_td_h_0           :               -0.4
+corr_rho_exp_p        :             -0.236
+corr_sigma_p          :             -0.117
+corr_tc_p             :              0.205
+corr_td_p             :             -0.778
+corr_sigma_rho_exp    :              0.407
+corr_tc_rho_exp       :              0.761
+corr_td_rho_exp       :             -0.281
+corr_tc_sigma         :              0.632
+corr_td_sigma         :             -0.159
+corr_td_tc            :             -0.645
+
+Error Model Parameters -------------------
+a1                    :              0.887
+b2                    :              0.401
+
+Elapsed time (seconds):    4e+02
+CPU time     (seconds):  2.4e+03
+Exploratory phase iterations:     1500 (Fixed number of iterations)
+Smoothing phase iterations:        500 (Fixed number of iterations)
+
+ _______________________________________________________________________________
+
+
+
+
+DATASET INFORMATION
+Number of individuals: 12
+Number of observations (obsid 1): 391
+Number of observations (obsid 2): 391
+Number of observations (obsid 3): 192
+Number of doses: 0
+

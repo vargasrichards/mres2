@@ -1,0 +1,239 @@
+********************************************************************************
+*                         3_prop.mlxtran                                       *
+*                         August 10, 2026 at 01:16:55                          *
+*                         Monolix version : 2024R1                             *
+********************************************************************************
+
+
+ESTIMATION OF THE POPULATION PARAMETERS ________________________________________
+
+Fixed Effects ----------------------------     se_sa    rse(%)   P2.5_sa  P97.5_sa
+beta_exp_pop          :              -3.54     0.263      7.43     -4.05     -3.02
+delta0_pop            :              0.933      18.5  1.98e+03    0.0311        28
+p_pop                 :               2.74     0.546      19.9      1.67      3.81
+td_pop                :               1.69     0.826        49     0.731       3.9
+b_exp_pop             :              -2.53     0.558        22     -3.63     -1.44
+h_0_pop               :               0.62    0.0813      13.1     0.481     0.799
+tc_pop                :               6.16      2.08      33.7      2.22      9.97
+sigma_pop             :              0.406     0.108      26.7     0.246     0.668
+phi_exp_pop           :              -2.15       nan         0       nan       nan
+rho_exp_pop           :              -2.16      1.27      58.8     -4.65     0.331
+alpha_exp_pop         :              -3.72       nan         0       nan       nan
+
+Standard Deviation of the Random Effects -
+omega_beta_exp        :              0.547     0.322      58.8     0.209      1.43
+omega_delta0          :               1.14       nan         0       nan       nan
+omega_p               :              0.529      0.18        34     0.285     0.982
+omega_td              :              0.521     0.314      60.4     0.195      1.39
+omega_b_exp           :               1.63      2.26       138     0.325       8.2
+omega_h_0             :              0.308     0.547       178    0.0503      1.88
+omega_tc              :               1.83      1.64      89.3     0.514      6.55
+omega_sigma           :              0.657     0.594      90.5     0.182      2.37
+omega_rho_exp         :              0.877     0.391      44.6     0.403       1.9
+omega_alpha_exp       :              0.294       nan         0       nan       nan
+
+Correlations -----------------------------
+corr_beta_exp_b_exp   :             -0.685       nan         0       nan       nan
+corr_delta0_b_exp     :              -0.73       nan         0       nan       nan
+corr_h_0_b_exp        :             -0.963       nan         0       nan       nan
+corr_p_b_exp          :              0.167       nan         0       nan       nan
+corr_rho_exp_b_exp    :             -0.909       nan         0       nan       nan
+corr_sigma_b_exp      :             0.0918       nan         0       nan       nan
+corr_tc_b_exp         :             -0.464       nan         0       nan       nan
+corr_td_b_exp         :              0.756       nan         0       nan       nan
+corr_delta0_beta_exp  :              0.581       nan         0       nan       nan
+corr_h_0_beta_exp     :              0.623       nan         0       nan       nan
+corr_p_beta_exp       :             -0.412       nan         0       nan       nan
+corr_rho_exp_beta_exp :              0.518       nan         0       nan       nan
+corr_sigma_beta_exp   :             -0.349       nan         0       nan       nan
+corr_tc_beta_exp      :              0.211       nan         0       nan       nan
+corr_td_beta_exp      :             -0.542     0.789       146    -0.993     0.919
+corr_h_0_delta0       :              0.698       nan         0       nan       nan
+corr_p_delta0         :              0.162       nan         0       nan       nan
+corr_rho_exp_delta0   :              0.701       nan         0       nan       nan
+corr_sigma_delta0     :              0.403       nan         0       nan       nan
+corr_tc_delta0        :              0.842       nan         0       nan       nan
+corr_td_delta0        :             -0.596     0.287      48.1    -0.915     0.183
+corr_p_h_0            :             -0.248       nan         0       nan       nan
+corr_rho_exp_h_0      :              0.934       nan         0       nan       nan
+corr_sigma_h_0        :             -0.089       nan         0       nan       nan
+corr_tc_h_0           :               0.42       nan         0       nan       nan
+corr_td_h_0           :             -0.665     0.415      62.4    -0.978     0.576
+corr_rho_exp_p        :             -0.229       nan         0       nan       nan
+corr_sigma_p          :              0.576       nan         0       nan       nan
+corr_tc_p             :              0.478     0.802       168    -0.908     0.988
+corr_td_p             :             -0.217     0.917       423    -0.971     0.931
+corr_sigma_rho_exp    :             0.0857       nan         0       nan       nan
+corr_tc_rho_exp       :              0.488       nan         0       nan       nan
+corr_td_rho_exp       :             -0.605       nan         0       nan       nan
+corr_tc_sigma         :               0.74       nan         0       nan       nan
+corr_td_sigma         :             0.0846     0.391       462    -0.596     0.694
+corr_td_tc            :             -0.421       nan         0       nan       nan
+
+Error Model Parameters -------------------
+a1                    :              0.892    0.0636      7.13     0.776      1.02
+b2                    :              0.413    0.0419      10.2     0.339     0.503
+a3                    :              0.454     0.281        62     0.167      1.23
+b3                    :                0.6    0.0859      14.3     0.455     0.791
+
+Elapsed time (seconds):  4.5e+02
+CPU time     (seconds):  2.6e+03
+Exploratory phase iterations:     1500 (Fixed number of iterations)
+Smoothing phase iterations:        500 (Fixed number of iterations)
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE INDIVIDUAL PARAMETERS ________________________________________
+
+
+Estimation of the individual parameters by Conditional Distribution ------------
+                      min            Q1        median            Q3           max  shrinkage(%)
+beta_exp  :         -4.34         -3.84         -3.49         -3.25         -2.62          6.49
+delta0    :         0.325         0.412         0.748          2.72          7.85          6.07
+p         :          1.57          2.47          2.92          3.07          3.27          8.19
+td        :         0.646          1.21           1.7          2.41          4.16          2.28
+b_exp     :         -5.32         -3.69         -2.03         -1.09         -0.78        -0.334
+h_0       :         0.446         0.479         0.574         0.791          1.06          2.66
+tc        :          1.17          3.82          4.79          8.51          11.5          8.18
+sigma     :         0.139         0.313         0.409         0.595          1.48          7.42
+phi_exp   :         -2.15         -2.15         -2.15         -2.15         -2.15           nan
+rho_exp   :          -3.3         -2.75         -2.54         -1.42        -0.535          2.12
+alpha_exp :         -3.94         -3.83         -3.75         -3.67          -3.3          42.3
+
+Elapsed time (seconds):       18
+CPU time     (seconds):    1e+02
+Iterations:      158 (Autostop)
+
+ -------------------------------------------------------------------------------
+
+
+Estimation of the individual parameters by Conditional Mode --------------------
+                      min            Q1        median            Q3           max  shrinkage(%)
+beta_exp  :         -4.33         -3.87         -3.53         -3.25         -2.62          8.99
+delta0    :         0.311         0.364         0.644          2.58          7.03          4.57
+p         :          1.61          2.43          2.89          3.11           3.3          7.13
+td        :         0.635           1.2          1.74          2.54          4.25         0.354
+b_exp     :          -5.3         -3.76         -2.02         -1.09        -0.785        -0.979
+h_0       :         0.437         0.475         0.566         0.809          1.06         0.121
+tc        :          0.98          3.73           4.7          8.51          11.5          11.9
+sigma     :         0.116         0.291         0.383         0.574          1.46          2.88
+phi_exp   :         -2.15         -2.15         -2.15         -2.15         -2.15           nan
+rho_exp   :         -3.28         -2.75         -2.53         -1.36        -0.581           3.2
+alpha_exp :         -3.96         -3.89         -3.75         -3.66          -3.3          36.2
+
+Elapsed time (seconds):      0.8
+CPU time     (seconds):        4
+
+ -------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE FISHER INFORMATION MATRIX ____________________________________
+
+
+Estimation of the Fisher information matrix by Stochastic Approximation --------
+
+Correlation Matrix :
+         beta_exp_pop         1
+           delta0_pop   0.41783         1
+                p_pop   0.14283   0.87322         1
+               td_pop  -0.51068  -0.92088  -0.83172         1
+            b_exp_pop  -0.37738  -0.35375  -0.17859   0.45791         1
+              h_0_pop   0.28769    0.5207   0.28533  -0.54885  -0.90843         1
+               tc_pop   -0.1279  -0.22096  -0.35908   0.27968  -0.24037   0.19475         1
+            sigma_pop  -0.36513   -0.3514  -0.27577   0.39447    0.1113   -0.1573   0.70969         1
+          phi_exp_pop       nan       nan       nan       nan       nan       nan       nan       nan       nan
+          rho_exp_pop   0.37545   0.93815   0.82495  -0.91629  -0.46492   0.63307  -0.25864  -0.29191       nan         1
+        alpha_exp_pop       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+       omega_beta_exp  -0.31943  -0.87279   -0.8648   0.81215   0.24944  -0.37536   0.44873   0.44754       nan  -0.84513       nan         1
+ corr_delta0_beta_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+      corr_p_beta_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+     corr_td_beta_exp   0.22407    0.8115   0.62605  -0.72528  -0.24882   0.51554 -0.064923  -0.20037       nan   0.82367       nan  -0.61571       nan       nan         1
+  corr_beta_exp_b_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+    corr_h_0_beta_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+     corr_tc_beta_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+  corr_sigma_beta_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+corr_rho_exp_beta_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+         omega_delta0       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+        corr_p_delta0       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+       corr_td_delta0 -0.028315  0.042535  0.075574  0.053897-0.0057136 -0.013857  -0.18685  -0.28253       nan -0.072503       nan  -0.20314       nan       nan  -0.14189       nan       nan       nan       nan       nan       nan       nan         1
+    corr_delta0_b_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+      corr_h_0_delta0       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+       corr_tc_delta0       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+    corr_sigma_delta0       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+  corr_rho_exp_delta0       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+              omega_p  -0.30219   -0.6212  -0.62007   0.57025   0.10536  -0.16922   0.38965   0.44147       nan  -0.51132       nan   0.70328       nan       nan  -0.27939       nan       nan       nan       nan       nan       nan       nan  -0.31442       nan       nan       nan       nan       nan         1
+            corr_td_p  -0.35466  -0.90397  -0.87624   0.86941   0.26003  -0.41419   0.44379   0.39495       nan  -0.92007       nan   0.88039       nan       nan  -0.76296       nan       nan       nan       nan       nan       nan       nan -0.089454       nan       nan       nan       nan       nan   0.56789         1
+         corr_p_b_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+           corr_p_h_0       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+            corr_tc_p    -0.341  -0.90103  -0.89512   0.88787   0.25885  -0.40748   0.44014   0.36043       nan  -0.93816       nan   0.87782       nan       nan  -0.72898       nan       nan       nan       nan       nan       nan       nan  0.086687       nan       nan       nan       nan       nan    0.5688   0.94962       nan       nan         1
+         corr_sigma_p       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+       corr_rho_exp_p       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+             omega_td   0.42028    0.3931   0.49442  -0.48683  0.024157 -0.089253  -0.58251  -0.38721       nan   0.34483       nan  -0.48592       nan       nan-0.0069041       nan       nan       nan       nan       nan       nan       nan   0.27858       nan       nan       nan       nan       nan  -0.51365  -0.52173       nan       nan  -0.50123       nan       nan         1
+        corr_td_b_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+          corr_td_h_0   0.43366   0.63199   0.72438  -0.69325    -0.115    0.1128   -0.6203  -0.39221       nan   0.64288       nan    -0.721       nan       nan   0.28571       nan       nan       nan       nan       nan       nan       nan   0.12399       nan       nan       nan       nan       nan  -0.57085  -0.79343       nan       nan   -0.7822       nan       nan   0.84915       nan         1
+           corr_td_tc       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+        corr_td_sigma -0.096334 -0.038761   -0.2805   0.10253  0.013383   0.17934   0.44187   0.20621       nan -0.040529       nan   0.29928       nan       nan     0.376       nan       nan       nan       nan       nan       nan       nan   -0.2954       nan       nan       nan       nan       nan    0.3396   0.21631       nan       nan   0.22541       nan       nan  -0.57119       nan  -0.55685       nan         1
+      corr_td_rho_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+          omega_b_exp  -0.35294  -0.96218  -0.88283   0.90616   0.24513  -0.44486   0.37274   0.39208       nan  -0.94988       nan   0.89257       nan       nan  -0.83383       nan       nan       nan       nan       nan       nan       nan   0.01117       nan       nan       nan       nan       nan   0.61082   0.94034       nan       nan   0.95153       nan       nan  -0.40714       nan  -0.67815       nan  0.047442       nan         1
+       corr_h_0_b_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+        corr_tc_b_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+     corr_sigma_b_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+   corr_rho_exp_b_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+            omega_h_0  -0.35694  -0.96357  -0.87953   0.90736   0.24637  -0.45086   0.36891   0.39515       nan  -0.94948       nan   0.88251       nan       nan  -0.84072       nan       nan       nan       nan       nan       nan       nan  0.012936       nan       nan       nan       nan       nan    0.6092   0.93891       nan       nan   0.94927       nan       nan  -0.40773       nan  -0.67234       nan  0.031299       nan   0.99827       nan       nan       nan       nan         1
+          corr_tc_h_0       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+       corr_sigma_h_0       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+     corr_rho_exp_h_0       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+             omega_tc  -0.32095  -0.94894  -0.85827   0.86129   0.26591  -0.45594   0.31696   0.38153       nan  -0.91971       nan   0.89625       nan       nan  -0.80712       nan       nan       nan       nan       nan       nan       nan -0.063828       nan       nan       nan       nan       nan   0.61679   0.89763       nan       nan   0.89598       nan       nan  -0.32313       nan  -0.59206       nan  0.082954       nan   0.95612       nan       nan       nan       nan   0.95389       nan       nan       nan         1
+        corr_tc_sigma       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+      corr_tc_rho_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+          omega_sigma  -0.39233  -0.89638  -0.88376   0.85614   0.21348  -0.32769   0.48804    0.4394       nan  -0.86134       nan   0.92178       nan       nan  -0.61809       nan       nan       nan       nan       nan       nan       nan  -0.15989       nan       nan       nan       nan       nan   0.71473   0.90495       nan       nan   0.90298       nan       nan  -0.57557       nan  -0.78368       nan    0.3526       nan   0.91307       nan       nan       nan       nan   0.90839       nan       nan       nan   0.92439       nan       nan         1
+   corr_sigma_rho_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+        omega_rho_exp   0.43163   0.28474   0.17027  -0.26707    0.2363   -0.2238  -0.20973  -0.32601       nan   0.06665       nan   -0.1571       nan       nan   0.10963       nan       nan       nan       nan       nan       nan       nan   0.13576       nan       nan       nan       nan       nan  -0.32727   -0.1608       nan       nan  -0.12059       nan       nan   0.47273       nan   0.28114       nan  0.049239       nan  -0.20532       nan       nan       nan       nan  -0.22082       nan       nan       nan  -0.18061       nan       nan  -0.26327       nan         1
+      omega_alpha_exp       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+                   a1  -0.23191  -0.63239  -0.70572   0.63451   0.18057  -0.23564   0.41358    0.2757       nan  -0.65392       nan   0.66216       nan       nan  -0.42985       nan       nan       nan       nan       nan       nan       nan -0.018028       nan       nan       nan       nan       nan   0.46305   0.70264       nan       nan   0.72442       nan       nan  -0.48323       nan  -0.66776       nan   0.31354       nan    0.6676       nan       nan       nan       nan   0.66441       nan       nan       nan   0.62792       nan       nan   0.68907       nan  -0.08786       nan         1
+                   b2  -0.22625  -0.74521   -0.6623   0.69605   0.21549  -0.41552   0.25216   0.30849       nan   -0.7327       nan   0.64948       nan       nan  -0.67515       nan       nan       nan       nan       nan       nan       nan  0.022931       nan       nan       nan       nan       nan   0.45616   0.70198       nan       nan   0.71389       nan       nan  -0.27411       nan  -0.46618       nan -0.055943       nan   0.75898       nan       nan       nan       nan   0.76522       nan       nan       nan   0.72495       nan       nan    0.6676       nan  -0.19006       nan   0.49448         1
+                   a3   0.32079   0.91007   0.90209  -0.86163  -0.22676   0.37355  -0.45187  -0.41241       nan   0.89079       nan  -0.88651       nan       nan    0.7016       nan       nan       nan       nan       nan       nan       nan   0.05602       nan       nan       nan       nan       nan  -0.62959  -0.92278       nan       nan  -0.93175       nan       nan   0.51161       nan   0.75397       nan  -0.20525       nan   -0.9335       nan       nan       nan       nan  -0.93238       nan       nan       nan  -0.89443       nan       nan  -0.90684       nan   0.21817       nan  -0.71338  -0.71532         1
+                   b3   0.32634   0.78071   0.71148  -0.73472  -0.18602   0.33273  -0.32532  -0.35385       nan   0.74635       nan  -0.72134       nan       nan    0.6439       nan       nan       nan       nan       nan       nan       nan  0.030909       nan       nan       nan       nan       nan  -0.51768   -0.7582       nan       nan  -0.75177       nan       nan   0.38569       nan   0.57682       nan  -0.06491       nan   -0.7886       nan       nan       nan       nan  -0.79004       nan       nan       nan  -0.76317       nan       nan  -0.74543       nan   0.26443       nan  -0.53533  -0.61243   0.78411         1
+
+WARNING : Impossible to compute the eigen values of the correlation matrix.
+
+Elapsed time (seconds):       28
+CPU time     (seconds):  1.8e+02
+Iterations:      200 (Stopped at the maximum number of iterations/Fisher matrix was not correctly estimated)
+
+ -------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE LOG-LIKELIHOOD _______________________________________________
+
+                                                            (is)
+-2 x log-likelihood                       (OFV) :        2201.83
+Akaike Information Criteria               (AIC) :        2323.83
+Corrected Bayesian Information Criteria  (BICc) :        2419.36
+Bayesian Information Criteria             (BIC) :        2353.41
+
+Elapsed time                          (seconds) :           8.26
+CPU time                              (seconds) :          35.00
+MonteCarlo size (is):    10000 (Fixed number of iterations)
+
+
+[Importance Sampling] Standard error        : 2.125
+                      Sampling distribution : T-distribution with 5 degrees of freedom
+
+ _______________________________________________________________________________
+
+DATASET INFORMATION
+Number of individuals: 12
+Number of observations (obsid 1): 391
+Number of observations (obsid 2): 391
+Number of observations (obsid 3): 192
+Number of doses: 0
+

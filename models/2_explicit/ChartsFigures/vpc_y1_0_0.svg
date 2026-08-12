@@ -1,0 +1,665 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" class="lixoftchart VPCContinuous" width="896" height="832" style="font-family: &quot;Source Sans Pro&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 400;"><style>:root {
+--lixoftgui-section-container-height:100%;
+--primary--1:rgba(21, 140, 186, 0.1);
+--primary--2:rgba(21, 140, 186, 0.2);
+--primary--3:rgba(21, 140, 186, 0.3);
+--primary--4:rgba(21, 140, 186, 0.4);
+--primary--5:rgba(21, 140, 186, 0.5);
+--primary--6:rgba(21, 140, 186, 0.6);
+--primary--7:rgba(21, 140, 186, 0.7);
+--primary--8:rgba(21, 140, 186, 0.8);
+--primary--9:rgba(21, 140, 186, 0.9);
+--secondary--1:rgba(240, 240, 240, 0.1);
+--secondary--2:rgba(240, 240, 240, 0.2);
+--secondary--3:rgba(240, 240, 240, 0.3);
+--secondary--4:rgba(240, 240, 240, 0.4);
+--secondary--5:rgba(240, 240, 240, 0.5);
+--secondary--6:rgba(240, 240, 240, 0.6);
+--secondary--7:rgba(240, 240, 240, 0.7);
+--secondary--8:rgba(240, 240, 240, 0.8);
+--secondary--9:rgba(240, 240, 240, 0.9);
+--success--1:rgba(40, 182, 44, 0.1);
+--success--2:rgba(40, 182, 44, 0.2);
+--success--3:rgba(40, 182, 44, 0.3);
+--success--4:rgba(40, 182, 44, 0.4);
+--success--5:rgba(40, 182, 44, 0.5);
+--success--6:rgba(40, 182, 44, 0.6);
+--success--7:rgba(40, 182, 44, 0.7);
+--success--8:rgba(40, 182, 44, 0.8);
+--success--9:rgba(40, 182, 44, 0.9);
+--info--1:rgba(117, 202, 235, 0.1);
+--info--2:rgba(117, 202, 235, 0.2);
+--info--3:rgba(117, 202, 235, 0.3);
+--info--4:rgba(117, 202, 235, 0.4);
+--info--5:rgba(117, 202, 235, 0.5);
+--info--6:rgba(117, 202, 235, 0.6);
+--info--7:rgba(117, 202, 235, 0.7);
+--info--8:rgba(117, 202, 235, 0.8);
+--info--9:rgba(117, 202, 235, 0.9);
+--warning--1:rgba(255, 133, 27, 0.1);
+--warning--2:rgba(255, 133, 27, 0.2);
+--warning--3:rgba(255, 133, 27, 0.3);
+--warning--4:rgba(255, 133, 27, 0.4);
+--warning--5:rgba(255, 133, 27, 0.5);
+--warning--6:rgba(255, 133, 27, 0.6);
+--warning--7:rgba(255, 133, 27, 0.7);
+--warning--8:rgba(255, 133, 27, 0.8);
+--warning--9:rgba(255, 133, 27, 0.9);
+--danger--1:rgba(255, 65, 54, 0.1);
+--danger--2:rgba(255, 65, 54, 0.2);
+--danger--3:rgba(255, 65, 54, 0.3);
+--danger--4:rgba(255, 65, 54, 0.4);
+--danger--5:rgba(255, 65, 54, 0.5);
+--danger--6:rgba(255, 65, 54, 0.6);
+--danger--7:rgba(255, 65, 54, 0.7);
+--danger--8:rgba(255, 65, 54, 0.8);
+--danger--9:rgba(255, 65, 54, 0.9);
+--light--1:rgba(246, 246, 246, 0.1);
+--light--2:rgba(246, 246, 246, 0.2);
+--light--3:rgba(246, 246, 246, 0.3);
+--light--4:rgba(246, 246, 246, 0.4);
+--light--5:rgba(246, 246, 246, 0.5);
+--light--6:rgba(246, 246, 246, 0.6);
+--light--7:rgba(246, 246, 246, 0.7);
+--light--8:rgba(246, 246, 246, 0.8);
+--light--9:rgba(246, 246, 246, 0.9);
+--dark--1:rgba(85, 85, 85, 0.1);
+--dark--2:rgba(85, 85, 85, 0.2);
+--dark--3:rgba(85, 85, 85, 0.3);
+--dark--4:rgba(85, 85, 85, 0.4);
+--dark--5:rgba(85, 85, 85, 0.5);
+--dark--6:rgba(85, 85, 85, 0.6);
+--dark--7:rgba(85, 85, 85, 0.7);
+--dark--8:rgba(85, 85, 85, 0.8);
+--dark--9:rgba(85, 85, 85, 0.9);
+--theme-scheme--1:#158CBA;
+--theme-scheme--2:#3e82bf;
+--theme-scheme--3:#6475bc;
+--theme-scheme--4:#8566b0;
+--theme-scheme--5:#a05599;
+--theme-scheme--6:#b0447c;
+--theme-scheme-lg--1:#158cba;
+--theme-scheme-lg--2:#1dade5;
+--theme-scheme-lg--3:#4abeeb;
+--theme-scheme-lg--4:#78cef0;
+--theme-scheme-lg--5:#b0447c;
+--theme-scheme-lg--6:#c36495;
+--theme-scheme-lg--7:#d189ae;
+--theme-scheme-lg--8:#e0adc7;
+--theme-scheme-lg--9:#618f35;
+--theme-scheme-lg--10:#7ab443;
+--theme-scheme-lg--11:#94c664;
+--theme-scheme-lg--12:#aed38a;
+--glyph-contrasted-color:black;
+--glyph-contrasted-lighter-color:#807f7f;
+--blue:#158CBA;
+--indigo:#6610f2;
+--purple:#6f42c1;
+--pink:#e83e8c;
+--red:#FF4136;
+--orange:#fd7e14;
+--yellow:#FF851B;
+--green:#28B62C;
+--teal:#20c997;
+--cyan:#75CAEB;
+--white:#fff;
+--gray:#999;
+--gray-dark:#333;
+--primary:#158CBA;
+--secondary:#f0f0f0;
+--success:#28B62C;
+--info:#75CAEB;
+--warning:#FF851B;
+--danger:#FF4136;
+--light:#f6f6f6;
+--dark:#555;
+--breakpoint-xs:0;
+--breakpoint-sm:576px;
+--breakpoint-md:768px;
+--breakpoint-lg:992px;
+--breakpoint-xl:1200px;
+--font-family-sans-serif:"Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+--font-family-monospace:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+--mm-color-background:;
+--fastui-numericwheel-base-color:;
+--fastui-numericwheel-handle-color:;
+--fastui-numericwheel-stripe-color:;
+--fastui-numericwheel-overlayside-color:;
+--fastui-numericwheel-overlaycenter-color:;
+--graphical-mode-icon-display:none;
+
+}
+html, body { height: 100%; }
+body { margin: 0px; overflow: hidden; }
+.lixoftchart-container { display: flex; flex-direction: column; height: 100%; }
+.lixoftchart { width: 100%; height: 100%; flex: 1 1 0%; }
+.lixoftchart-header, .lixoftchart-settings-card-header { height: 34px; }
+.lixoftchart-settings-card-header { padding: 0.4rem 1.25rem; border-style: solid; border-width: 0px 1px 4px; }
+.main { flex: 1 1 0%; height: 100%; width: 100%; }
+.footer { margin: 0px; }
+.checkinit-footer { max-height: 230px; overflow-y: auto; }
+.page, .subpage { height: 100%; display: none; }
+.page.active, .subpage.active { display: block; }
+.axes, .grid { pointer-events: none; }
+.axis path, .axis line { fill: none; shape-rendering: crispedges; }
+.tick { font-family: sans-serif; }
+.line { fill: none; }
+.tick line { stroke-width: 1px; }
+.grid line { opacity: 0.2; }
+.title { pointer-events: none; font-weight: 400; }
+.axis-label { text-anchor: middle; }
+.axis-label-unit { font-family: monospace; font-size: smaller; }
+.label-subscript { baseline-shift: sub; font-size: 0.8em; }
+.zoomable-content, .brushable-content { cursor: crosshair; }
+rect.zoom { fill: rgb(221, 221, 221); stroke: steelblue; fill-opacity: 0.5; }
+g.brush &gt; rect.selection { stroke-width: 0; }
+.handle--custom { fill: rgb(122, 122, 122); fill-opacity: 1; stroke: rgb(122, 122, 122); stroke-width: 2px; display: inline !important; }
+.log-filtered { display: none; }
+.dot { stroke: none; }
+.observations-container .observation-dot.greyed { fill: lightgrey !important; }
+.spline { fill: none; }
+.regressionLine { fill: none; }
+.yeqxLine { fill: none; }
+.convergence-line { fill: none; }
+.percentile-line, .distribution-line { stroke-width: 1px; }
+.bar { shape-rendering: crispedges; }
+.vertical-line, .horizontal-line { shape-rendering: crispedges; }
+.k1, .bound { shape-rendering: crispedges; }
+.outlier.dot { fill: none; }
+.boxplot { font: 10px sans-serif; }
+.box-element line, .box-element rect { stroke-opacity: 1; shape-rendering: crispedges; }
+.boxplot .outlier line { fill: none; }
+.boxplot .box-underlay { fill: white; fill-opacity: 1; }
+.boxplot .label { font-size: 12px; }
+.arrow-marker { stroke-width: 0; font-size: 20px; fill: red; dominant-baseline: central; }
+.layout-link { padding: 1px 5px !important; }
+.sublayout-controls { min-height: 20px; transition: opacity 0.5s ease-in-out 0s; background-color: transparent; opacity: 0.2; cursor: pointer; }
+.pagination { transition: opacity 0.5s ease-in-out 0s; }
+.sublayout-controls .pagination { opacity: 0; }
+.sublayout-controls:hover { transition: none 0s ease 0s; opacity: 0.9; }
+.sublayout-controls:hover .pagination { transition: none 0s ease 0s; opacity: 1; }
+.plot-grid, .subplot-grid { margin: 0px; min-width: 0px; }
+.grid-cell { outline: rgb(221, 221, 221) solid 1px; cursor: text; position: absolute; }
+.plot-cell { background-color: rgba(119, 33, 111, 0.3); }
+.matrix-diagonal-cell { background-color: rgb(174, 167, 159) !important; }
+.plot-cell.selected { background-color: rgb(119, 33, 111); }
+.plot-cell:hover, .plot-cell.hovered { background-color: rgb(243, 152, 20); }
+.plot-cell.ui-selecting { background-color: rgb(233, 84, 32); }
+.cells-selector { cursor: pointer; width: 0px; height: 0px; position: absolute; border: 10px solid rgba(119, 33, 111, 0.3); }
+.cells-selector.selected { border-color: rgb(119, 33, 111); }
+.cells-selector.rows, .cells-selector.all { border-top-color: transparent !important; border-bottom-color: transparent !important; border-right-color: transparent !important; }
+.cells-selector.cols { border-top-color: transparent !important; border-left-color: transparent !important; border-right-color: transparent !important; }
+.cells-selector.all { transform: rotate(-45deg); }
+.cells-selector:hover { border-color: rgb(243, 152, 20); }
+.layout-grid, .sublayout-grid { padding: 0px; margin: 0px; min-width: 0px; background-color: transparent; border: none; box-shadow: none !important; }
+.layout-grid-content { border-collapse: collapse; border: 1px solid rgb(221, 221, 221); }
+.layout-cell { background-color: rgba(119, 33, 111, 0.3); border: 1px solid rgb(221, 221, 221); min-width: 20px; width: 20px; height: 20px; cursor: pointer; }
+.layout-cell.selected { background-color: rgb(119, 33, 111); }
+.layout-cell.selecting { background-color: rgb(233, 84, 32); }
+.layout-container { align-items: center; }
+.layout-controls { display: flex; justify-content: space-between; align-items: center; }
+.layout-controls &gt; .layout-controls-wrapper { display: flex; align-items: baseline; }
+.layout-controls .btn { border: 0px; border-radius: 0px; white-space: nowrap; padding: 4px 8px !important; }
+.layout-controls .btn.toggle-controls-btn { margin-left: 1rem !important; }
+.pagination input { color: inherit; background: transparent; border: 0px; outline: none; }
+.contrasted-chart-header-btn:not(:hover) { background: rgba(255, 255, 255, 0.2) !important; }
+.message-banner { position: fixed; left: 0px; width: 100%; margin-bottom: 0px; z-index: 10; }
+.message-banner.top { top: 0px; }
+.message-banner.bottom { bottom: 0px; }
+.legend { box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 17px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px; z-index: 10; }
+.legend:not(.no-move) { cursor: move !important; }
+.legend-glyph:not(.aa) { shape-rendering: crispedges; }
+.legend-group-label { font-weight: bold; }
+line.glyph-contrasted { stroke:  black  !important; }
+circle.glyph-contrasted { fill:  black  !important; }
+line.glyph-contrasted-lighter { stroke:  #807f7f  !important; }
+circle.glyph-contrasted-lighter { fill:  #807f7f  !important; }
+.ui-selectable-helper { z-index: 1100; }
+.ui-selectable-helper.no-top { border-top: 0px; }
+.ui-selectable-helper.no-right { border-right: 0px; }
+.ui-selectable-helper.no-bottom { border-bottom: 0px; }
+.ui-selectable-helper.no-left { border-left: 0px; }
+.print-preview &gt; .modal-dialog { position: absolute; height: auto; inset: 0px; }
+.page-preview { border: 1px dashed rgb(51, 51, 51); margin: 0px auto; }
+.page-preview.portrait { height: 60vh; width: 42.42vh; }
+.page-preview.landscape { width: 60vw; height: 42.42vw; }
+.tooltip-key::after { content: ": "; }
+.brushed-out, .bar.brushed-out { fill: rgb(204, 204, 204) !important; }
+.infowrapper { pointer-events: none; }
+.information { overflow: hidden overlay; padding: 0.5em; font-family: monospace; box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 17px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px; display: inline-block; float: right; cursor: move; pointer-events: all; }
+.information span { float: left; clear: both; }
+.axis path, .axis line, .grid line{
+stroke: #636363;
+}
+
+.tick text{
+fill: #636363;
+}
+
+.axis path, .axis line{
+stroke-width: 1px;
+}
+
+.bar-label{
+fill: #000000;
+}
+
+.bar-label{
+font-size: 10px;
+}
+
+.bin-value, g.binsValues{
+stroke: red;
+}
+
+.bin-value, g.binsValues{
+}
+
+.bin-value, g.binsValues{
+stroke-width: 1px;
+}
+
+.bound{
+stroke: red;
+}
+
+.bound{
+stroke-width: 2px;
+}
+
+.bound.bounded{
+stroke: limegreen;
+}
+
+.baseline, .histo-baseline, .histo-median{
+stroke: #000000;
+}
+
+.baseline, .histo-baseline, .histo-median{
+}
+
+.baseline, .histo-baseline, .histo-median{
+stroke-width: 1px;
+}
+
+.box-element rect, g.box-element{
+fill: #8fbbd9;
+}
+
+.boxplot .outlier line{
+stroke: #ff0000;
+}
+
+.boxplot .outlier line{
+stroke-width: 1px;
+}
+
+.quartile, .histo-quartile{
+stroke: #000000;
+}
+
+.quartile, .histo-quartile{
+stroke-dasharray: 3, 2;
+}
+
+.quartile, .histo-quartile{
+stroke-width: 1px;
+}
+
+.box-element line{
+stroke: #000000;
+}
+
+.box-element line{
+stroke-width: 1px;
+}
+
+.boxplot-value{
+fill: #000000;
+}
+
+.boxplot-value{
+stroke: #000000;
+}
+
+.censEvents{
+fill: #d44242;
+}
+
+.censEvents{
+stroke: #d44242;
+}
+
+.censObservations{
+fill: #d44242;
+}
+.censObsIntervals{stroke:rgb(212,66,66);stroke-opacity:0.5;}
+
+.censObsIntervals{
+}
+
+.censObsIntervals{
+stroke-width: 5px;
+}
+
+.censObservations.highlighted:not(.check-init-observation){
+fill: brown !important;
+}
+
+.convergence-line{
+stroke: #4682B4;
+}
+
+.cvIndicator-line{
+stroke: #990099;
+}
+
+g.dosingTimes, g.dosingTimes-container{
+stroke: #000000;
+}
+
+g.dosingTimes, g.dosingTimes-container{
+stroke-dasharray: 8, 8;
+}
+
+g.dosingTimes, g.dosingTimes-container{
+stroke-width: 2px;
+}
+
+line.empirical, path.empirical{
+stroke: #4682B4;
+}
+
+.dot.empirical{
+fill: #4682B4;
+}
+
+line.empirical, path.empirical{
+}
+
+line.empirical, path.empirical{
+stroke-width: 2px;
+}
+
+.fisher_linearization&gt;.bar{
+fill: #4682B4;
+}
+
+.fisher_stochasticApproximation&gt;.bar{
+fill: #98abc5;
+}
+
+.focus &gt; line, .focus &gt; circle{
+stroke: blue;
+}
+
+.lixoftchart{
+background-color: #ffffff;
+}
+
+.sublayout-controls:hover{
+background-color: #ffffff;
+}
+
+.bar:hover, .band-overlay:hover, circle.highlighted:not(.censObservations){
+fill: orange !important;
+}
+
+line.highlighted, path.highlighted{
+stroke: orange !important;
+}
+
+g.bar, g.histogram{
+fill: #4682B4;
+}
+
+g.bar, g.histogram, g.histogram&gt;.bar{
+stroke: #ffffff;
+}
+
+g.bar, g.histogram{
+stroke-width: 1px;
+}
+
+.information{
+background-color: #FFFFCC;
+}
+
+.information{
+fill: #FFFFCC;
+}
+
+.information{
+font-size: 12px;
+}
+
+.information{
+color: #000000;
+}
+
+.k1{
+stroke: red;
+}
+
+.k1{
+stroke-width: 1px;
+}
+
+.axis-label.global{
+fill: #000000;
+}
+
+.axis-label.global{
+font-size: 14px;
+}
+
+.legend-frame{
+fill: #ffffff;
+}
+
+.legend-frame{
+stroke: #000000;
+}
+
+.legend-frame{
+stroke-width: 0px;
+}
+
+.legend text{
+fill: #000000;
+}
+
+.legend{
+font-size: 12px;
+}
+
+.ll_importanceSampling&gt;.bar{
+fill: #98abc5;
+}
+
+.ll_linearization&gt;.bar{
+fill: #4682B4;
+}
+
+g.medians, path.median, line.median{
+stroke: #000000;
+}
+
+g.medians, path.median, line.median{
+stroke-dasharray: 5,3;
+}
+
+g.medians, path.median, line.median{
+stroke-width: 1px;
+}
+
+.observation{
+fill: #4682B4;
+}
+
+.observation{
+stroke: #4682B4;
+}
+
+.observation-line{
+stroke-width: 1.5px;
+}
+
+.obsStatisticsValues{
+font-size: 10px;
+}
+
+.observation-statistics-line, g.obsStatistics{
+stroke: #000000;
+}
+
+.observation-statistics-line, g.obsStatistics{
+}
+
+.observation-statistics-line, g.obsStatistics{
+stroke-width: 1.5px;
+}
+
+.outlier.area{
+fill: #ff0000;
+}
+
+.outlier.dot{
+stroke: #ff0000;
+}
+
+.outlier.dot{
+stroke-width: 1px;
+}
+.prediction-interval.median{fill:rgb(255,0,0);fill-opacity:0.2;}
+.prediction-interval.low, .prediction-interval.up{fill:rgb(0,128,255);fill-opacity:0.3;}
+.plot-background{fill:rgb(250,250,255);fill-opacity:0.6;}
+.bar{stroke:rgb(250,250,255);stroke-opacity:0.6;}
+
+.regressionLine{
+stroke: #bd2671;
+}
+
+.regressionLine{
+}
+
+.regressionLine{
+stroke-width: 1.5px;
+}
+
+.spline{
+stroke: #eba213;
+}
+
+.spline{
+}
+
+.spline{
+stroke-width: 1.5px;
+}
+
+.axis-label.sublabel, .matrix-diagonal-label{
+fill: #000000;
+}
+
+.axis-label.sublabel, .matrix-diagonal-label{
+font-size: 12px;
+}
+
+line.theoretical, path.theoretical{
+stroke: #000000;
+}
+
+.dot.theoretical{
+fill: #000000;
+}
+
+line.theoretical, path.theoretical{
+stroke-dasharray: 5,3;
+}
+
+line.theoretical, path.theoretical{
+stroke-width: 1.5px;
+}
+
+.tick{
+font-size: 10px;
+}
+
+.title{
+fill: #000000;
+}
+
+.title{
+font-size: 14px;
+}
+
+.axis-label-unit{
+fill: #999;
+}
+
+.userGuide-dot{
+fill: red;
+}
+
+.userGuide-line{
+stroke: red;
+}
+
+.userGuide-dot{
+r: 3;
+}
+
+.userGuide-line{
+}
+
+.userGuide-line{
+stroke-width: 1px;
+}
+
+.brushed-out, .brushed-out.bar{
+fill: #ccc !important;
+}
+.not-areaOutliers{display:none;}
+.binsValues,.__binsValues{display:none;}
+.censObservations,.__censObservations{display:none;}
+.not-dotOutliers{display:none;}
+.not-empirical{display:none;}
+.not-grid{display:none;}
+.not-hasCensored{display:none;}
+.hasDoses,.__hasDoses{display:none;}
+.hasIOV,.__hasIOV{display:none;}
+.not-hasMean{display:none;}
+.not-hasMode{display:none;}
+.hasNominalTime,.__hasNominalTime{display:none;}
+.hasRegressors,.__hasRegressors{display:none;}
+.hasUnused,.__hasUnused{display:none;}
+.individualsSelected,.__individualsSelected{display:none;}
+.not-isIndivEstimMean{display:none;}
+.legend,.__legend{display:none;}
+.linkedZoom,.__linkedZoom{display:none;}
+.mergeableSplits,.__mergeableSplits{display:none;}
+.mergedSplits,.__mergedSplits{display:none;}
+.observations,.__observations{display:none;}
+.not-piMedian{display:none;}
+.not-piPercentile{display:none;}
+.not-piecewiseLinear{display:none;}
+.splitted,.__splitted{display:none;}
+.theoretical,.__theoretical{display:none;}
+.not-xAutoTicks{display:none;}
+.xEqualDomains,.__xEqualDomains{display:none;}
+.xLog,.__xLog{display:none;}
+.not-yAutoTicks{display:none;}
+.yEqualDomains,.__yEqualDomains{display:none;}
+.yLog,.__yLog{display:none;}
+.not-bottomAxisLine{display:none;}
+.not-bottomAxisTickLabels{display:none;}
+.bottomAxisTickRotation,.__bottomAxisTickRotation{display:none;}
+.not-leftAxisLine{display:none;}
+.not-leftAxisTickLabels{display:none;}
+.rightAxisLine,.__rightAxisLine{display:none;}
+.not-rightAxisTickLabels{display:none;}
+.topAxisLine,.__topAxisLine{display:none;}
+.not-topAxisTickLabels{display:none;}
+.freehand-guides-layer,.__freehand-guides-layer{display:none;}
+</style><g class="lixoftchart-scaler" transform="scale(1)"><g class="lixoftchart-translator" transform="translate(50,40)"><g class="x axis" transform="translate(0, 792)"><text class="x axis-label global" x="403" y="-10" style="text-anchor: middle;"><tspan class="axis-label-text">time</tspan><tspan class="axis-label-unit"/></text></g><g class="y axis"><text class="y axis-label global" transform="rotate(-90)" x="-396" y="-30" style="text-anchor: middle;"><tspan class="axis-label-text">y1</tspan><tspan class="axis-label-unit"/></text></g><g class="page plot-page active" data-index="0"><g class="plot-container page-element" width="806" height="752" data-index="0" data-col="0" data-row="0" transform="translate(0,0)"><g class="subpage plot-page active" data-index="0"><g class="plot page-element" width="806" height="752" id="All" data-index="0" transform="translate(0,0)"><rect width="806" height="752" class="plot-background"/><svg class="plot-content zoomable-content" width="806" height="752"><g class="predictionInterval"><g class="median piPercentile"><polygon class="prediction-interval-mask autoscale median prediction-interval" points="36.63636363636364,592.814842772968 46.538083538083534,592.814842772968 86.14496314496313,317.6205613756242 125.75184275184274,170.17977388353904 165.35872235872233,134.06714103837953 204.96560196560193,136.0887434396193 244.57248157248156,158.8952326167373 284.17936117936114,187.02042624171156 323.7862407862408,216.69338485102662 363.3931203931204,245.80759375735056 403,272.10691479741683 442.6068796068796,292.9089929474301 482.21375921375926,309.98135316540413 521.8206388206388,338.0344944933655 561.4275184275184,366.9555452963798 600.1342416796962,385.11088564907834 648.6569556569556,402.30540308681645 713.2538902538902,394.71927217230757 713.2538902538902,394.71927217230757 769.3636363636363,394.71927217230757 769.3636363636363,580.9153555388419 713.2538902538902,580.9153555388419 648.6569556569556,524.089202057184 600.1342416796962,479.4635943815663 561.4275184275184,458.90781368455237 521.8206388206388,435.6568415320198 482.21375921375926,406.1605684115235 442.6068796068796,378.8705910323975 403,347.86185169021087 363.3931203931204,314.15155822271964 323.7862407862408,279.7393688869637 284.17936117936114,248.34259915305785 244.57248157248156,220.4822478440559 204.96560196560193,204.2704341970724 165.35872235872233,218.88457927810623 125.75184275184274,310.2504766756895 86.14496314496313,581.1736820852218 46.538083538083534,640.41597619108 36.63636363636364,640.41597619108"/></g><g class="low piPercentile"><polygon class="prediction-interval-mask autoscale low prediction-interval" points="36.63636363636364,657.6765499376066 46.538083538083534,657.6765499376066 86.14496314496313,604.9684903606449 125.75184275184274,337.3328994784907 165.35872235872233,226.6658353906705 204.96560196560193,211.88951348225146 244.57248157248156,232.59723559730628 284.17936117936114,263.9762981921159 323.7862407862408,294.37065015497 363.3931203931204,326.39086487285255 403,361.0336467158356 442.6068796068796,399.122937227789 482.21375921375926,423.4900601726163 521.8206388206388,450.8535537680694 561.4275184275184,470.44606044584924 600.1342416796962,493.37774716234713 648.6569556569556,501.41514867336514 713.2538902538902,502.0018372041584 713.2538902538902,502.0018372041584 769.3636363636363,502.0018372041584 769.3636363636363,689.178623110488 713.2538902538902,689.178623110488 648.6569556569556,665.4866016989585 600.1342416796962,643.9636421697606 561.4275184275184,619.2041278991231 521.8206388206388,596.7443898163954 482.21375921375926,574.3449345720828 442.6068796068796,554.9660693055482 403,518.3698167620515 363.3931203931204,479.6609452403444 323.7862407862408,421.0399118959212 284.17936117936114,379.89421199665315 244.57248157248156,343.48661814775926 204.96560196560193,383.5760932497908 165.35872235872233,503.2765172376252 125.75184275184274,645.9852479387835 86.14496314496313,691.1893735003194 46.538083538083534,717.8181818181819 36.63636363636364,717.8181818181819"/></g><g class="up piPercentile"><polygon class="prediction-interval-mask autoscale up prediction-interval" points="36.63636363636364,373.3996426546232 46.538083538083534,373.3996426546232 86.14496314496313,106.69212714182981 125.75184275184274,38.749698799848375 165.35872235872233,34.181818181818244 204.96560196560193,48.04056653308396 244.57248157248156,66.74671705167316 284.17936117936114,92.84517726494983 323.7862407862408,124.80633488641217 363.3931203931204,146.6632034257542 403,163.3198275369225 442.6068796068796,175.59506613554095 482.21375921375926,189.12069387368388 521.8206388206388,220.70748888083858 561.4275184275184,252.5557113572288 600.1342416796962,274.6462828747128 648.6569556569556,272.664207292104 713.2538902538902,291.60110068428935 713.2538902538902,291.60110068428935 769.3636363636363,291.60110068428935 769.3636363636363,462.947226059181 713.2538902538902,462.947226059181 648.6569556569556,408.1177722478917 600.1342416796962,378.38582015671665 561.4275184275184,356.8183586993747 521.8206388206388,321.1229174084936 482.21375921375926,299.41000847760273 442.6068796068796,272.28850533377204 403,253.16580142446838 363.3931203931204,224.93348256230547 323.7862407862408,196.48865208770906 284.17936117936114,167.4411866028903 244.57248157248156,144.8707329850655 204.96560196560193,122.94975892712205 165.35872235872233,120.44027604023472 125.75184275184274,156.5343161788984 86.14496314496313,276.95409025729106 46.538083538083534,567.4328955163053 36.63636363636364,567.4328955163053"/></g></g><g class="theoreticalPercentiles"/><g class="empiricalPercentiles"><g class="percentile empirical"><path data-legend="Empirical percentiles" data-legend-class="empirical" class="line autoscale empirical" d="M713.2538902538902,480.50844878224774L648.6569556569556,463.1998385341035L600.1342416796962,473.0329057642558L561.4275184275184,413.76905750828234L521.8206388206388,419.46700051720904L482.21375921375926,358.05911731219635L442.6068796068796,348.05081327061004L403,290.1266465166509L363.3931203931204,254.31522232065066L323.7862407862408,228.9549474778114L284.17936117936114,176.1677863381177L244.57248157248156,144.3714929670606L204.96560196560193,171.8869483262298L165.35872235872233,182.30857465861902L125.75184275184274,226.65215185762338L86.14496314496313,444.8522790596635L46.538083538083534,573.2720593882902" fill="none"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="713.2538902538902" cy="480.50844878224774"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="648.6569556569556" cy="463.1998385341035"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="600.1342416796962" cy="473.0329057642558"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="561.4275184275184" cy="413.76905750828234"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="521.8206388206388" cy="419.46700051720904"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="482.21375921375926" cy="358.05911731219635"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="442.6068796068796" cy="348.05081327061004"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="403" cy="290.1266465166509"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="363.3931203931204" cy="254.31522232065066"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="323.7862407862408" cy="228.9549474778114"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="284.17936117936114" cy="176.1677863381177"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="244.57248157248156" cy="144.3714929670606"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="204.96560196560193" cy="171.8869483262298"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="165.35872235872233" cy="182.30857465861902"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="125.75184275184274" cy="226.65215185762338"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="86.14496314496313" cy="444.8522790596635"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="46.538083538083534" cy="573.2720593882902"/><circle class="outlier dot autoscale dotOutliers" data-legend-group="Outliers" data-legend="Dots" r="5" cx="284.17936117936114" cy="176.1677863381177" data-legend-class="dotOutliers"/><circle class="outlier dot autoscale dotOutliers" data-legend-group="Outliers" data-legend="Dots" r="5" cx="244.57248157248156" cy="144.3714929670606" data-legend-class="dotOutliers"/><circle class="outlier dot autoscale dotOutliers" data-legend-group="Outliers" data-legend="Dots" r="5" cx="46.538083538083534" cy="573.2720593882902" data-legend-class="dotOutliers"/></g><g class="percentile empirical"><path data-legend="Empirical percentiles" data-legend-class="empirical" class="line autoscale empirical" d="M713.2538902538902,562.9159273199576L648.6569556569556,513.2531797533693L600.1342416796962,566.2659652021358L561.4275184275184,498.2550973173261L521.8206388206388,531.9021619061529L482.21375921375926,474.3516585218139L442.6068796068796,522.680544194552L403,390.62891382747034L363.3931203931204,323.0330054687216L323.7862407862408,295.39945802646594L284.17936117936114,249.6151574138055L244.57248157248156,262.86508913611783L204.96560196560193,261.3476058684556L165.35872235872233,411.0608588627649L125.75184275184274,530.9335398808029L86.14496314496313,610.4019854074907L46.538083538083534,615.2346132752414" fill="none"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="713.2538902538902" cy="562.9159273199576"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="648.6569556569556" cy="513.2531797533693"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="600.1342416796962" cy="566.2659652021358"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="561.4275184275184" cy="498.2550973173261"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="521.8206388206388" cy="531.9021619061529"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="482.21375921375926" cy="474.3516585218139"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="442.6068796068796" cy="522.680544194552"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="403" cy="390.62891382747034"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="363.3931203931204" cy="323.0330054687216"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="323.7862407862408" cy="295.39945802646594"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="284.17936117936114" cy="249.6151574138055"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="244.57248157248156" cy="262.86508913611783"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="204.96560196560193" cy="261.3476058684556"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="165.35872235872233" cy="411.0608588627649"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="125.75184275184274" cy="530.9335398808029"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="86.14496314496313" cy="610.4019854074907"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="46.538083538083534" cy="615.2346132752414"/><circle class="outlier dot autoscale dotOutliers" data-legend-group="Outliers" data-legend="Dots" r="5" cx="363.3931203931204" cy="323.0330054687216" data-legend-class="dotOutliers"/><circle class="outlier dot autoscale dotOutliers" data-legend-group="Outliers" data-legend="Dots" r="5" cx="284.17936117936114" cy="249.6151574138055" data-legend-class="dotOutliers"/><circle class="outlier dot autoscale dotOutliers" data-legend-group="Outliers" data-legend="Dots" r="5" cx="46.538083538083534" cy="615.2346132752414" data-legend-class="dotOutliers"/></g><g class="percentile empirical"><path data-legend="Empirical percentiles" data-legend-class="empirical" class="line autoscale empirical" d="M713.2538902538902,422.9979538014973L648.6569556569556,360.31467609914966L600.1342416796962,380.7209880565077L561.4275184275184,303.32934140572866L521.8206388206388,289.58932753860705L482.21375921375926,215.37435792285657L442.6068796068796,192.21059582542716L403,202.3015643251739L363.3931203931204,175.53008908945014L323.7862407862408,152.42537303356414L284.17936117936114,82.12515597213326L244.57248157248156,102.80898432474476L204.96560196560193,107.02487169093502L165.35872235872233,116.41909690047112L125.75184275184274,101.46863918171232L86.14496314496313,195.21013473582593L46.538083538083534,505.47262067603333" fill="none"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="713.2538902538902" cy="422.9979538014973"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="648.6569556569556" cy="360.31467609914966"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="600.1342416796962" cy="380.7209880565077"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="561.4275184275184" cy="303.32934140572866"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="521.8206388206388" cy="289.58932753860705"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="482.21375921375926" cy="215.37435792285657"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="442.6068796068796" cy="192.21059582542716"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="403" cy="202.3015643251739"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="363.3931203931204" cy="175.53008908945014"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="323.7862407862408" cy="152.42537303356414"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="284.17936117936114" cy="82.12515597213326"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="244.57248157248156" cy="102.80898432474476"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="204.96560196560193" cy="107.02487169093502"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="165.35872235872233" cy="116.41909690047112"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="125.75184275184274" cy="101.46863918171232"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="86.14496314496313" cy="195.21013473582593"/><circle class="percentile-dot dot autoscale empirical" r="3" cx="46.538083538083534" cy="505.47262067603333"/><circle class="outlier dot autoscale dotOutliers" data-legend-group="Outliers" data-legend="Dots" r="5" cx="600.1342416796962" cy="380.7209880565077" data-legend-class="dotOutliers"/><circle class="outlier dot autoscale dotOutliers" data-legend-group="Outliers" data-legend="Dots" r="5" cx="284.17936117936114" cy="82.12515597213326" data-legend-class="dotOutliers"/></g></g><g class="userGuides"/></svg><g class="axes"><g class="bottom axis bottomAxisLine" transform="translate(0,752)" fill="none" text-anchor="middle"><path class="domain" stroke="#000" d="M0.5,6V0.5H806.5V6" fill="none"/><g class="tick" opacity="1" transform="translate(76.74324324324324,0)"><line stroke="#000" y2="3" fill="none"/><text fill="#000" y="6" dy="0.71em" class="bottomAxisTickLabels transformed-label"><tspan class="label-block">2</tspan></text></g><g class="tick" opacity="1" transform="translate(155.95700245700243,0)"><line stroke="#000" y2="3" fill="none"/><text fill="#000" y="6" dy="0.71em" class="bottomAxisTickLabels transformed-label"><tspan class="label-block">4</tspan></text></g><g class="tick" opacity="1" transform="translate(235.17076167076166,0)"><line stroke="#000" y2="3" fill="none"/><text fill="#000" y="6" dy="0.71em" class="bottomAxisTickLabels transformed-label"><tspan class="label-block">6</tspan></text></g><g class="tick" opacity="1" transform="translate(314.38452088452084,0)"><line stroke="#000" y2="3" fill="none"/><text fill="#000" y="6" dy="0.71em" class="bottomAxisTickLabels transformed-label"><tspan class="label-block">8</tspan></text></g><g class="tick" opacity="1" transform="translate(393.5982800982801,0)"><line stroke="#000" y2="3" fill="none"/><text fill="#000" y="6" dy="0.71em" class="bottomAxisTickLabels transformed-label"><tspan class="label-block">10</tspan></text></g><g class="tick" opacity="1" transform="translate(472.8120393120393,0)"><line stroke="#000" y2="3" fill="none"/><text fill="#000" y="6" dy="0.71em" class="bottomAxisTickLabels transformed-label"><tspan class="label-block">12</tspan></text></g><g class="tick" opacity="1" transform="translate(552.0257985257986,0)"><line stroke="#000" y2="3" fill="none"/><text fill="#000" y="6" dy="0.71em" class="bottomAxisTickLabels transformed-label"><tspan class="label-block">14</tspan></text></g><g class="tick" opacity="1" transform="translate(631.2395577395577,0)"><line stroke="#000" y2="3" fill="none"/><text fill="#000" y="6" dy="0.71em" class="bottomAxisTickLabels transformed-label"><tspan class="label-block">16</tspan></text></g><g class="tick" opacity="1" transform="translate(710.453316953317,0)"><line stroke="#000" y2="3" fill="none"/><text fill="#000" y="6" dy="0.71em" class="bottomAxisTickLabels transformed-label"><tspan class="label-block">18</tspan></text></g><g class="tick" opacity="1" transform="translate(789.6670761670762,0)"><line stroke="#000" y2="3" fill="none"/><text fill="#000" y="6" dy="0.71em" class="bottomAxisTickLabels transformed-label"><tspan class="label-block">20</tspan></text></g></g><g class="left axis leftAxisLine" fill="none" text-anchor="end"><path class="domain" stroke="#000" d="M-6,752.5H0.5V0.5H-6" fill="none"/><g class="tick" opacity="1" transform="translate(0,741.8269729696364)"><line stroke="#000" x2="-3" fill="none"/><text fill="#000" x="-6" dy="0.32em" class="leftAxisTickLabels transformed-label"><tspan class="label-block">-2</tspan></text></g><g class="tick" opacity="1" transform="translate(0,682.7809314263549)"><line stroke="#000" x2="-3" fill="none"/><text fill="#000" x="-6" dy="0.32em" class="leftAxisTickLabels transformed-label"><tspan class="label-block">-1</tspan></text></g><g class="tick" opacity="1" transform="translate(0,623.7348898830734)"><line stroke="#000" x2="-3" fill="none"/><text fill="#000" x="-6" dy="0.32em" class="leftAxisTickLabels transformed-label"><tspan class="label-block">0</tspan></text></g><g class="tick" opacity="1" transform="translate(0,564.688848339792)"><line stroke="#000" x2="-3" fill="none"/><text fill="#000" x="-6" dy="0.32em" class="leftAxisTickLabels transformed-label"><tspan class="label-block">1</tspan></text></g><g class="tick" opacity="1" transform="translate(0,505.64280679651046)"><line stroke="#000" x2="-3" fill="none"/><text fill="#000" x="-6" dy="0.32em" class="leftAxisTickLabels transformed-label"><tspan class="label-block">2</tspan></text></g><g class="tick" opacity="1" transform="translate(0,446.59676525322897)"><line stroke="#000" x2="-3" fill="none"/><text fill="#000" x="-6" dy="0.32em" class="leftAxisTickLabels transformed-label"><tspan class="label-block">3</tspan></text></g><g class="tick" opacity="1" transform="translate(0,387.5507237099475)"><line stroke="#000" x2="-3" fill="none"/><text fill="#000" x="-6" dy="0.32em" class="leftAxisTickLabels transformed-label"><tspan class="label-block">4</tspan></text></g><g class="tick" opacity="1" transform="translate(0,328.504682166666)"><line stroke="#000" x2="-3" fill="none"/><text fill="#000" x="-6" dy="0.32em" class="leftAxisTickLabels transformed-label"><tspan class="label-block">5</tspan></text></g><g class="tick" opacity="1" transform="translate(0,269.4586406233845)"><line stroke="#000" x2="-3" fill="none"/><text fill="#000" x="-6" dy="0.32em" class="leftAxisTickLabels transformed-label"><tspan class="label-block">6</tspan></text></g><g class="tick" opacity="1" transform="translate(0,210.41259908010306)"><line stroke="#000" x2="-3" fill="none"/><text fill="#000" x="-6" dy="0.32em" class="leftAxisTickLabels transformed-label"><tspan class="label-block">7</tspan></text></g><g class="tick" opacity="1" transform="translate(0,151.36655753682157)"><line stroke="#000" x2="-3" fill="none"/><text fill="#000" x="-6" dy="0.32em" class="leftAxisTickLabels transformed-label"><tspan class="label-block">8</tspan></text></g><g class="tick" opacity="1" transform="translate(0,92.32051599354008)"><line stroke="#000" x2="-3" fill="none"/><text fill="#000" x="-6" dy="0.32em" class="leftAxisTickLabels transformed-label"><tspan class="label-block">9</tspan></text></g><g class="tick" opacity="1" transform="translate(0,33.274474450258595)"><line stroke="#000" x2="-3" fill="none"/><text fill="#000" x="-6" dy="0.32em" class="leftAxisTickLabels transformed-label"><tspan class="label-block">10</tspan></text></g></g></g><g class="grid"><g class="vertical" transform="translate(0,752)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><g class="tick" opacity="1" transform="translate(76.74324324324324,0)"><line stroke="#000" y2="-752" fill="none"/></g><g class="tick" opacity="1" transform="translate(155.95700245700243,0)"><line stroke="#000" y2="-752" fill="none"/></g><g class="tick" opacity="1" transform="translate(235.17076167076166,0)"><line stroke="#000" y2="-752" fill="none"/></g><g class="tick" opacity="1" transform="translate(314.38452088452084,0)"><line stroke="#000" y2="-752" fill="none"/></g><g class="tick" opacity="1" transform="translate(393.5982800982801,0)"><line stroke="#000" y2="-752" fill="none"/></g><g class="tick" opacity="1" transform="translate(472.8120393120393,0)"><line stroke="#000" y2="-752" fill="none"/></g><g class="tick" opacity="1" transform="translate(552.0257985257986,0)"><line stroke="#000" y2="-752" fill="none"/></g><g class="tick" opacity="1" transform="translate(631.2395577395577,0)"><line stroke="#000" y2="-752" fill="none"/></g><g class="tick" opacity="1" transform="translate(710.453316953317,0)"><line stroke="#000" y2="-752" fill="none"/></g><g class="tick" opacity="1" transform="translate(789.6670761670762,0)"><line stroke="#000" y2="-752" fill="none"/></g></g><g class="horizontal" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><g class="tick" opacity="1" transform="translate(0,741.8269729696364)"><line stroke="#000" x2="806" fill="none"/></g><g class="tick" opacity="1" transform="translate(0,682.7809314263549)"><line stroke="#000" x2="806" fill="none"/></g><g class="tick" opacity="1" transform="translate(0,623.7348898830734)"><line stroke="#000" x2="806" fill="none"/></g><g class="tick" opacity="1" transform="translate(0,564.688848339792)"><line stroke="#000" x2="806" fill="none"/></g><g class="tick" opacity="1" transform="translate(0,505.64280679651046)"><line stroke="#000" x2="806" fill="none"/></g><g class="tick" opacity="1" transform="translate(0,446.59676525322897)"><line stroke="#000" x2="806" fill="none"/></g><g class="tick" opacity="1" transform="translate(0,387.5507237099475)"><line stroke="#000" x2="806" fill="none"/></g><g class="tick" opacity="1" transform="translate(0,328.504682166666)"><line stroke="#000" x2="806" fill="none"/></g><g class="tick" opacity="1" transform="translate(0,269.4586406233845)"><line stroke="#000" x2="806" fill="none"/></g><g class="tick" opacity="1" transform="translate(0,210.41259908010306)"><line stroke="#000" x2="806" fill="none"/></g><g class="tick" opacity="1" transform="translate(0,151.36655753682157)"><line stroke="#000" x2="806" fill="none"/></g><g class="tick" opacity="1" transform="translate(0,92.32051599354008)"><line stroke="#000" x2="806" fill="none"/></g><g class="tick" opacity="1" transform="translate(0,33.274474450258595)"><line stroke="#000" x2="806" fill="none"/></g></g></g><defs><g id="All-pi-median"><polygon class="prediction-interval piecewise-select" points="36.63636363636364,592.814842772968 46.538083538083534,592.814842772968 46.538083538083534,640.41597619108 36.63636363636364,640.41597619108"/><polygon class="prediction-interval piecewise-select" points="46.538083538083534,592.814842772968 86.14496314496313,317.6205613756242 86.14496314496313,581.1736820852218 46.538083538083534,640.41597619108"/><polygon class="prediction-interval piecewise-select" points="86.14496314496313,317.6205613756242 125.75184275184274,170.17977388353904 125.75184275184274,310.2504766756895 86.14496314496313,581.1736820852218"/><polygon class="prediction-interval piecewise-select" points="125.75184275184274,170.17977388353904 165.35872235872233,134.06714103837953 165.35872235872233,218.88457927810623 125.75184275184274,310.2504766756895"/><polygon class="prediction-interval piecewise-select" points="165.35872235872233,134.06714103837953 204.96560196560193,136.0887434396193 204.96560196560193,204.2704341970724 165.35872235872233,218.88457927810623"/><polygon class="prediction-interval piecewise-select" points="204.96560196560193,136.0887434396193 244.57248157248156,158.8952326167373 244.57248157248156,220.4822478440559 204.96560196560193,204.2704341970724"/><polygon class="prediction-interval piecewise-select" points="244.57248157248156,158.8952326167373 284.17936117936114,187.02042624171156 284.17936117936114,248.34259915305785 244.57248157248156,220.4822478440559"/><polygon class="prediction-interval piecewise-select" points="284.17936117936114,187.02042624171156 323.7862407862408,216.69338485102662 323.7862407862408,279.7393688869637 284.17936117936114,248.34259915305785"/><polygon class="prediction-interval piecewise-select" points="323.7862407862408,216.69338485102662 363.3931203931204,245.80759375735056 363.3931203931204,314.15155822271964 323.7862407862408,279.7393688869637"/><polygon class="prediction-interval piecewise-select" points="363.3931203931204,245.80759375735056 403,272.10691479741683 403,347.86185169021087 363.3931203931204,314.15155822271964"/><polygon class="prediction-interval piecewise-select" points="403,272.10691479741683 442.6068796068796,292.9089929474301 442.6068796068796,378.8705910323975 403,347.86185169021087"/><polygon class="prediction-interval piecewise-select" points="442.6068796068796,292.9089929474301 482.21375921375926,309.98135316540413 482.21375921375926,406.1605684115235 442.6068796068796,378.8705910323975"/><polygon class="prediction-interval piecewise-select" points="482.21375921375926,309.98135316540413 521.8206388206388,338.0344944933655 521.8206388206388,435.6568415320198 482.21375921375926,406.1605684115235"/><polygon class="prediction-interval piecewise-select" points="521.8206388206388,338.0344944933655 561.4275184275184,366.9555452963798 561.4275184275184,458.90781368455237 521.8206388206388,435.6568415320198"/><polygon class="prediction-interval piecewise-select" points="561.4275184275184,366.9555452963798 600.1342416796962,385.11088564907834 600.1342416796962,479.4635943815663 561.4275184275184,458.90781368455237"/><polygon class="prediction-interval piecewise-select" points="600.1342416796962,385.11088564907834 648.6569556569556,402.30540308681645 648.6569556569556,524.089202057184 600.1342416796962,479.4635943815663"/><polygon class="prediction-interval piecewise-select" points="648.6569556569556,402.30540308681645 713.2538902538902,394.71927217230757 713.2538902538902,580.9153555388419 648.6569556569556,524.089202057184"/><polygon class="prediction-interval piecewise-select" points="713.2538902538902,394.71927217230757 769.3636363636363,394.71927217230757 769.3636363636363,580.9153555388419 713.2538902538902,580.9153555388419"/></g><g id="All-pi-median-maskdata"/><mask id="All-pi-median-mask" class="prediction-interval-mask"><rect x="0" y="0" width="100%" height="100%" fill="white"/><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#All-pi-median-maskdata" fill="black"/></mask><g id="All-pi-low"><polygon class="prediction-interval piecewise-select" points="36.63636363636364,657.6765499376066 46.538083538083534,657.6765499376066 46.538083538083534,717.8181818181819 36.63636363636364,717.8181818181819"/><polygon class="prediction-interval piecewise-select" points="46.538083538083534,657.6765499376066 86.14496314496313,604.9684903606449 86.14496314496313,691.1893735003194 46.538083538083534,717.8181818181819"/><polygon class="prediction-interval piecewise-select" points="86.14496314496313,604.9684903606449 125.75184275184274,337.3328994784907 125.75184275184274,645.9852479387835 86.14496314496313,691.1893735003194"/><polygon class="prediction-interval piecewise-select" points="125.75184275184274,337.3328994784907 165.35872235872233,226.6658353906705 165.35872235872233,503.2765172376252 125.75184275184274,645.9852479387835"/><polygon class="prediction-interval piecewise-select" points="165.35872235872233,226.6658353906705 204.96560196560193,211.88951348225146 204.96560196560193,383.5760932497908 165.35872235872233,503.2765172376252"/><polygon class="prediction-interval piecewise-select" points="204.96560196560193,211.88951348225146 244.57248157248156,232.59723559730628 244.57248157248156,343.48661814775926 204.96560196560193,383.5760932497908"/><polygon class="prediction-interval piecewise-select" points="244.57248157248156,232.59723559730628 284.17936117936114,263.9762981921159 284.17936117936114,379.89421199665315 244.57248157248156,343.48661814775926"/><polygon class="prediction-interval piecewise-select" points="284.17936117936114,263.9762981921159 323.7862407862408,294.37065015497 323.7862407862408,421.0399118959212 284.17936117936114,379.89421199665315"/><polygon class="prediction-interval piecewise-select" points="323.7862407862408,294.37065015497 363.3931203931204,326.39086487285255 363.3931203931204,479.6609452403444 323.7862407862408,421.0399118959212"/><polygon class="prediction-interval piecewise-select" points="363.3931203931204,326.39086487285255 403,361.0336467158356 403,518.3698167620515 363.3931203931204,479.6609452403444"/><polygon class="prediction-interval piecewise-select" points="403,361.0336467158356 442.6068796068796,399.122937227789 442.6068796068796,554.9660693055482 403,518.3698167620515"/><polygon class="prediction-interval piecewise-select" points="442.6068796068796,399.122937227789 482.21375921375926,423.4900601726163 482.21375921375926,574.3449345720828 442.6068796068796,554.9660693055482"/><polygon class="prediction-interval piecewise-select" points="482.21375921375926,423.4900601726163 521.8206388206388,450.8535537680694 521.8206388206388,596.7443898163954 482.21375921375926,574.3449345720828"/><polygon class="prediction-interval piecewise-select" points="521.8206388206388,450.8535537680694 561.4275184275184,470.44606044584924 561.4275184275184,619.2041278991231 521.8206388206388,596.7443898163954"/><polygon class="prediction-interval piecewise-select" points="561.4275184275184,470.44606044584924 600.1342416796962,493.37774716234713 600.1342416796962,643.9636421697606 561.4275184275184,619.2041278991231"/><polygon class="prediction-interval piecewise-select" points="600.1342416796962,493.37774716234713 648.6569556569556,501.41514867336514 648.6569556569556,665.4866016989585 600.1342416796962,643.9636421697606"/><polygon class="prediction-interval piecewise-select" points="648.6569556569556,501.41514867336514 713.2538902538902,502.0018372041584 713.2538902538902,689.178623110488 648.6569556569556,665.4866016989585"/><polygon class="prediction-interval piecewise-select" points="713.2538902538902,502.0018372041584 769.3636363636363,502.0018372041584 769.3636363636363,689.178623110488 713.2538902538902,689.178623110488"/></g><g id="All-pi-low-maskdata"/><mask id="All-pi-low-mask" class="prediction-interval-mask"><rect x="0" y="0" width="100%" height="100%" fill="white"/><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#All-pi-low-maskdata" fill="black"/></mask><g id="All-pi-up"><polygon class="prediction-interval piecewise-select" points="36.63636363636364,373.3996426546232 46.538083538083534,373.3996426546232 46.538083538083534,567.4328955163053 36.63636363636364,567.4328955163053"/><polygon class="prediction-interval piecewise-select" points="46.538083538083534,373.3996426546232 86.14496314496313,106.69212714182981 86.14496314496313,276.95409025729106 46.538083538083534,567.4328955163053"/><polygon class="prediction-interval piecewise-select" points="86.14496314496313,106.69212714182981 125.75184275184274,38.749698799848375 125.75184275184274,156.5343161788984 86.14496314496313,276.95409025729106"/><polygon class="prediction-interval piecewise-select" points="125.75184275184274,38.749698799848375 165.35872235872233,34.181818181818244 165.35872235872233,120.44027604023472 125.75184275184274,156.5343161788984"/><polygon class="prediction-interval piecewise-select" points="165.35872235872233,34.181818181818244 204.96560196560193,48.04056653308396 204.96560196560193,122.94975892712205 165.35872235872233,120.44027604023472"/><polygon class="prediction-interval piecewise-select" points="204.96560196560193,48.04056653308396 244.57248157248156,66.74671705167316 244.57248157248156,144.8707329850655 204.96560196560193,122.94975892712205"/><polygon class="prediction-interval piecewise-select" points="244.57248157248156,66.74671705167316 284.17936117936114,92.84517726494983 284.17936117936114,167.4411866028903 244.57248157248156,144.8707329850655"/><polygon class="prediction-interval piecewise-select" points="284.17936117936114,92.84517726494983 323.7862407862408,124.80633488641217 323.7862407862408,196.48865208770906 284.17936117936114,167.4411866028903"/><polygon class="prediction-interval piecewise-select" points="323.7862407862408,124.80633488641217 363.3931203931204,146.6632034257542 363.3931203931204,224.93348256230547 323.7862407862408,196.48865208770906"/><polygon class="prediction-interval piecewise-select" points="363.3931203931204,146.6632034257542 403,163.3198275369225 403,253.16580142446838 363.3931203931204,224.93348256230547"/><polygon class="prediction-interval piecewise-select" points="403,163.3198275369225 442.6068796068796,175.59506613554095 442.6068796068796,272.28850533377204 403,253.16580142446838"/><polygon class="prediction-interval piecewise-select" points="442.6068796068796,175.59506613554095 482.21375921375926,189.12069387368388 482.21375921375926,299.41000847760273 442.6068796068796,272.28850533377204"/><polygon class="prediction-interval piecewise-select" points="482.21375921375926,189.12069387368388 521.8206388206388,220.70748888083858 521.8206388206388,321.1229174084936 482.21375921375926,299.41000847760273"/><polygon class="prediction-interval piecewise-select" points="521.8206388206388,220.70748888083858 561.4275184275184,252.5557113572288 561.4275184275184,356.8183586993747 521.8206388206388,321.1229174084936"/><polygon class="prediction-interval piecewise-select" points="561.4275184275184,252.5557113572288 600.1342416796962,274.6462828747128 600.1342416796962,378.38582015671665 561.4275184275184,356.8183586993747"/><polygon class="prediction-interval piecewise-select" points="600.1342416796962,274.6462828747128 648.6569556569556,272.664207292104 648.6569556569556,408.1177722478917 600.1342416796962,378.38582015671665"/><polygon class="prediction-interval piecewise-select" points="648.6569556569556,272.664207292104 713.2538902538902,291.60110068428935 713.2538902538902,462.947226059181 648.6569556569556,408.1177722478917"/><polygon class="prediction-interval piecewise-select" points="713.2538902538902,291.60110068428935 769.3636363636363,291.60110068428935 769.3636363636363,462.947226059181 713.2538902538902,462.947226059181"/></g><g id="All-pi-up-maskdata"/><mask id="All-pi-up-mask" class="prediction-interval-mask"><rect x="0" y="0" width="100%" height="100%" fill="white"/><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#All-pi-up-maskdata" fill="black"/></mask><clipPath id="All--freehand-guides-clip" class="freehand-guides-clip"><rect x="0" y="0" width="806" height="752"/></clipPath></defs></g></g><text x="403" y="-1em" class="title transformed-label" text-anchor="middle"/></g></g></g></g></svg>

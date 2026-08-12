@@ -1,0 +1,11 @@
+parameter,statistics,p-value,test
+beta_exp,0.948465,0.929363,Shapiro-Wilk
+delta0,0.902749,0.205193,Shapiro-Wilk
+p,0.899514,0.157886,Shapiro-Wilk
+td,0.965874,0.982424,Shapiro-Wilk
+b_exp,0.878815,0.102497,Shapiro-Wilk
+h_0,0.898732,0.0483774,Shapiro-Wilk
+tc,0.931789,0.515158,Shapiro-Wilk
+sigma,0.955157,0.996699,Shapiro-Wilk
+rho_exp,0.898231,0.149173,Shapiro-Wilk
+alpha_exp,0.940425,0.768129,Shapiro-Wilk

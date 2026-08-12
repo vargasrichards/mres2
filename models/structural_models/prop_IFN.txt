@@ -1,0 +1,72 @@
+[LONGITUDINAL]
+; PROPORTIONAL IFN STRUCTURAL MODEL
+input = {beta_exp, 
+          delta0, 
+          p, td, b_exp, h_0, 
+          tc, sigma, 
+           phi_exp, 
+          rho_exp, alpha_exp};  
+
+EQUATION:
+
+t0 = td
+beta = 10^(beta_exp)
+p_t = 10^p
+phi = 10^phi_exp
+alpha = 10^alpha_exp
+k = 4.0
+c = 10.0
+
+T_0 = 8*10^7
+R_0 = 0
+D_0 = 0
+E_0 = 1
+I_0 = 0
+F_0 = 0
+Vt_0 = 0; 
+
+if  t <= td
+	h = 0
+	B = 0
+else
+	h = h_0
+	B = 10^b_exp
+end
+
+
+if t <= tc
+	delta = delta0
+else
+	delta = delta0*exp(sigma*(t - tc))
+end
+
+rho = 10^rho_exp
+
+F = alpha*I
+ddt_T = - beta*T*(B*Vt^h) - phi*F*T + rho*R
+ddt_R =  phi*F*T - rho*R
+ddt_E  = beta*T*(B*Vt^h) - k*E
+ddt_I = k*E - delta*I
+ddt_Vt = p_t*I - c*Vt
+
+ddt_D = delta*I
+
+Vi = B*Vt^h
+
+ValueVt = max(log10( max(0.0000001, Vt) ), 0)
+ValueVi = max(log10( max(0.0000001, Vi) ),0)
+ValueF = log10(max(0.0000001, F) )
+
+; flows between compartments
+flow_T_to_R = phi*F*T
+flow_R_to_T = rho*R
+
+; ratio of Target to refractory
+T_freq = T / (R + T)
+
+changeinT =  - beta*T*(B*Vt^h) - phi*F*T + rho*R
+foi = beta*T*(B*Vt^h)
+; 
+
+OUTPUT:
+output = {ValueVt,ValueVi, ValueF, flow_T_to_R, flow_R_to_T, T_freq, changeinT, T, I, E, R, foi, D}
