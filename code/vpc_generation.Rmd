@@ -1,0 +1,72 @@
+---
+title: "vpc_generation"
+output: html_document
+---
+
+This file generates the Visual predictive checks and the individual fits shown in the thesis. Note you must have lixoftConnectors R package installed.
+
+```{r setup}
+library(lixoftConnectors)
+library(ggplot2)
+library(dplyr)
+library(patchwork)
+library(here)
+
+here::i_am("code/vpc_generation.Rmd")
+
+source(here::here("code", "paths.R"))
+source(here::here("code", "monolix_utils.R"))
+
+if (!exists("rerun_estimation")) rerun_estimation <- FALSE
+
+initializeLixoftConnectors(software = "monolix", force = TRUE)
+```
+
+```{r vpc}
+ifn_y_label <- "log10 IFN-a2a conc. (pg/mL)"
+time_x_label <- "Time (days post-inoculation)"
+
+yax_lims <- c(-20, 7)
+
+ensure_results(path_mlxtran_3_explicit, force = rerun_estimation)
+explicit_obs_ifn <- getObservationInformation()
+
+explicit_ifn <- plotVpc("y3") +
+  labs(x = time_x_label, y = ifn_y_label, title = "Explicit model") +
+  theme_bw(base_size = 14) + theme(legend.position = "none")
+
+save_fig(explicit_ifn, "explicit_ifn_vpc.pdf")
+
+explicit_ifn_fitted <- lixoftConnectors::plotIndividualFits("y3") +
+  labs(y = ifn_y_label, x = time_x_label, title = "Explicit model") +
+  theme_bw(base_size = 14) + theme(legend.position = "bottom")
+
+save_fig(explicit_ifn_fitted, "individual_fits_explicit_ifn.pdf")
+
+ensure_results(path_mlxtran_3_prop, force = rerun_estimation)
+prop_obs_ifn <- getObservationInformation()
+
+prop_ifn <- plotVpc("y3") +
+  labs(x = time_x_label, y = ifn_y_label, title = "Proportional model") +
+  theme_bw(base_size = 14) + theme(legend.position = "none")
+
+save_fig(prop_ifn, "prop_ifn_vpc.pdf")
+
+prop_ifn_fitted <- lixoftConnectors::plotIndividualFits("y3") +
+  labs(y = ifn_y_label, x = time_x_label, title = "Proportional model") +
+  theme_bw(base_size = 14) + theme(legend.position = "bottom")
+
+pcomb_vpc <- explicit_ifn + prop_ifn +
+    scale_y_continuous(limits = yax_lims) &
+  plot_layout(axes = "collect") &
+  theme_bw(base_size = 18) + theme(legend.position = "none") &
+  patchwork::plot_annotation(tag_levels = "A")
+
+p_ind_fits <- explicit_ifn_fitted + prop_ifn_fitted +
+  plot_layout(axes = "collect") &
+  theme_bw(base_size = 14) + theme(legend.position = "none")
+
+save_fig(p_ind_fits, "Fig_S2_Combined_indfits_ifn.pdf", width = 12, height = 6)
+
+save_fig(pcomb_vpc, "Fig_6_Combined_VPC_IFN.pdf", width = 12, height = 6)
+```
