@@ -14,11 +14,6 @@ library(here)
 
 here::i_am("code/vpc_generation.Rmd")
 
-source(here::here("code", "paths.R"))
-source(here::here("code", "monolix_utils.R"))
-
-if (!exists("rerun_estimation")) rerun_estimation <- FALSE
-
 initializeLixoftConnectors(software = "monolix", force = TRUE)
 ```
 
@@ -28,7 +23,7 @@ time_x_label <- "Time (days post-inoculation)"
 
 yax_lims <- c(-20, 7)
 
-ensure_results(path_mlxtran_3_explicit, force = rerun_estimation)
+loadProject(path_mlxtran_3_explicit)
 explicit_obs_ifn <- getObservationInformation()
 
 explicit_ifn <- plotVpc("y3") +
@@ -43,7 +38,7 @@ explicit_ifn_fitted <- lixoftConnectors::plotIndividualFits("y3") +
 
 save_fig(explicit_ifn_fitted, "individual_fits_explicit_ifn.pdf")
 
-ensure_results(path_mlxtran_3_prop, force = rerun_estimation)
+loadProject(path_mlxtran_3_prop)
 prop_obs_ifn <- getObservationInformation()
 
 prop_ifn <- plotVpc("y3") +
